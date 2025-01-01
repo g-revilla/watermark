@@ -1,0 +1,2 @@
+# The main requirements are in conda/env.yml
+buildozer
