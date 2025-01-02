@@ -28,17 +28,17 @@ class WatermarkApp(App):
         layout.add_widget(self.text_input)
         
         # Checkbox for B&W
-        bw_layout = BoxLayout(orientation='horizontal', size_hint=(0.15, 0.1))
+        bw_layout = BoxLayout(orientation='horizontal', size_hint=(0.5, 0.1))
         self.bw_checkbox = CheckBox(active=True)
-        bw_label = Label(text="B&W", size_hint=(0.3, 0))
+        bw_label = Label(text="B&W")
         bw_layout.add_widget(self.bw_checkbox)
         bw_layout.add_widget(bw_label)
         layout.add_widget(bw_layout)
         
         # Checkbox for Hide ID
-        hide_layout = BoxLayout(orientation='horizontal', size_hint=(0.15, 0.1))
+        hide_layout = BoxLayout(orientation='horizontal', size_hint=(0.5, 0.1))
         self.hide_checkbox = CheckBox(active=True)
-        hide_label = Label(text="Hide ID", size_hint=(0.3, 0))
+        hide_label = Label(text="Hide ID")
         hide_layout.add_widget(self.hide_checkbox)
         hide_layout.add_widget(hide_label)
         layout.add_widget(hide_layout)
