@@ -31,4 +31,4 @@ The usage is very simple.
 
 <img src="images/example2.png" width="300"/>
 
-As seen in the image, the user only needs to write the text, select whether they want the resulting image in Black and White (B&W), and choose whether to hide the eyes and signature (Hide ID).
+As seen in the image, the user only needs to write the text, select whether they want the resulting image in Black and White (**B&W**), and choose whether to hide the eyes and signature (**Hide ID**).
