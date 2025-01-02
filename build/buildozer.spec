@@ -13,7 +13,7 @@ package.domain = org.watermark
 source.dir = ../
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,tiff,webp,ttf
+source.include_exts = py,png,jpg,webp,ttf
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -47,7 +47,7 @@ requirements = python3,kivy
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/logo.tiff
+icon.filename = %(source.dir)s/images/logo.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
