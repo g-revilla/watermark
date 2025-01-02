@@ -9,7 +9,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.image import Image
 from kivy.uix.popup import Popup
-from kivy.uix.filechooser import FileChooserListView
+from kivy.uix.filechooser import FileChooserIconView
 from PIL import Image as PILImage, ImageDraw, ImageFont
 
 class WatermarkApp(App):
@@ -20,7 +20,7 @@ class WatermarkApp(App):
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
 
         # Logo image
-        self.logo = Image(source='images/logo.png', size_hint=(1, 0.3))
+        self.logo = self.logo = Image(source=os.path.join('assets', 'images', 'logo.png'), size_hint=(1, 0.3))
         layout.add_widget(self.logo)
         
         # Text input for watermark
@@ -56,8 +56,9 @@ class WatermarkApp(App):
             self.show_popup("Error", "Please enter some text for the watermark.")
             return
 
-        input_image_path = 'images/test.webp'
-        if not os.path.exists(input_image_path):
+        input_image_path = os.path.join('assets', 'images', 'test.webp')  # Change it to your image path
+
+        if input_image_path is None or not os.path.exists(input_image_path):
             self.show_popup("Error", f"The input image {input_image_path} was not found.")
             return
 
@@ -71,7 +72,7 @@ class WatermarkApp(App):
                 # Add watermark text
                 draw = ImageDraw.Draw(img)
                 font_size = int(img.size[1] * 0.075)  # Font size proportional to image height
-                font = ImageFont.truetype("font/Arial.ttf", font_size)
+                font = ImageFont.truetype(os.path.join('assets', 'font', 'Arial.ttf'), font_size)
                 bbox = draw.textbbox((0, 0), watermark_text, font=font)
                 text_width, text_height = bbox[2] - bbox[0], bbox[3] - bbox[1]
                 mult = [0.95, 0.32]
@@ -111,7 +112,7 @@ class WatermarkApp(App):
         popup.open()
 
     def show_save_dialog(self, img):
-        filechooser = FileChooserListView(path=os.getcwd(), dirselect=True)
+        filechooser = FileChooserIconView(path=os.getcwd(), dirselect=True)
 
         popup_layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
         popup_layout.add_widget(filechooser)

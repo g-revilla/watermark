@@ -1,4 +1,4 @@
-<img src="images/logo.png" width="150"/>
+<img src="assets/images/logo.png" width="150"/>
 
 # Watermark
 A GUI to easily add watermarks to ID cards
@@ -11,7 +11,7 @@ Sending **scanned** or **photographed** identity documents comes with risks. It 
 
 A simple solution is to add a small **watermark** to the document, as shown in the image below:
 
-<img src="images/example.jpg" width="400"/>
+<img src="assets/images/example.jpg" width="400"/>
 
 *Source: [Wikipedia](https://es.wikipedia.org/wiki/Documento_nacional_de_identidad_%28España%29) and Watermark* 
 
@@ -59,6 +59,6 @@ The build process takes a considerable amount of time (approximately 20 minutes 
 ## How to use it?
 The usage is very simple.
 
-<img src="images/example2.png" width="300"/>
+<img src="assets/images/example2.png" width="300"/>
 
 As seen in the image, the user only needs to write the text, select whether they want the resulting image in Black and White (**B&W**), and choose whether to hide the eyes and signature (**Hide ID**).
