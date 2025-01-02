@@ -1,9 +1,5 @@
 FROM kivy/python-for-android:latest
 
-RUN cd /tmp  && \
-    git clone https://github.com/g-revilla/watermark.git && \
-    pip install --no-cache-dir buildozer cython
-
-WORKDIR /tmp/watermark/build
+RUN pip install --no-cache-dir buildozer cython
 
 CMD ["bash"]

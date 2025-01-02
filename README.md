@@ -46,7 +46,7 @@ docker build -t watermark:latest -f docker/Dockerfile .
 
 Next, create the container:
 ```bash
-docker run --rm -it --name watermark watermark:latest
+docker run -it --name watermark -v "$(pwd):/tmp/watermark" -w /tmp/watermark/build watermark:latest
 ```
 
 Once inside, run on the shell:
