@@ -122,7 +122,7 @@ class WatermarkApp(App):
         popup = Popup(title="Save Image", content=popup_layout, size_hint=(0.9, 0.9))
 
         def save_image(instance):
-            output_name = f"Watermark_{dt.datetime.now().strftime("%Y%m%d_%H%M%S")}.jpg"
+            output_name = f"Watermark_{dt.datetime.now().strftime('%Y%m%d_%H%M%S')}.jpg"
 
             selected_path = filechooser.selection[0] if filechooser.selection else None
             if selected_path:
