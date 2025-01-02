@@ -14,7 +14,7 @@ from PIL import Image as PILImage, ImageDraw, ImageFont
 
 class WatermarkApp(App):
     def build(self):
-        self.title = "Watermark App"
+        self.title = "Watermark GUI"
         
         # Main layout
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)

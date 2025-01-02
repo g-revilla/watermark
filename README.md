@@ -1,7 +1,7 @@
 <img src="images/logo.png" width="150"/>
 
 # Watermark
-An Android app to easily add watermarks to ID cards
+A GUI to easily add watermarks to ID cards
 
 ## Motivation
 
@@ -19,12 +19,22 @@ A simple solution is to add a small **watermark** to the document, as shown in t
 There are many ways to add a watermark to a document, but they often have drawbacks:
 - Some are **paid services**.
 - Some are **time-consuming** to learn.
-- Our ID card images may be stored in **multiple locations** on your phone.
+- Our ID card images may be stored in **multiple locations** on your machine.
 - When using **online services**, we cannot be sure if they **store** your identity documents.
 
-The goal of this app is to provide a **simple**, **free** solution for adding watermarks to your identity documents **quickly** and **easily**, without worrying about **privacy** or **security** issues.
+The goal of this GUI is to provide a **simple**, **free** solution for adding watermarks to your identity documents **quickly** and **easily**, without worrying about **privacy** or **security** issues.
 
 ## How to set it up?
+### macOS / Linux / Windows
+1. Clone the repository.
+2. Install the requirements (for instance, via conda).
+```bash
+conda env create -f conda/env.yml
+conda activate watermark
+```
+3. Copy your personal ID to the image folder, and modify the input_image_path in main.py.
+4. Run the main.py file.
+
 
 ## How to use it?
 The usage is very simple.
