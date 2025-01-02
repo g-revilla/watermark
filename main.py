@@ -20,7 +20,7 @@ class WatermarkApp(App):
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
 
         # Logo image
-        self.logo = Image(source='images/logo.tiff', size_hint=(1, 0.3))
+        self.logo = Image(source='images/logo.png', size_hint=(1, 0.3))
         layout.add_widget(self.logo)
         
         # Text input for watermark
