@@ -18,16 +18,17 @@ A simple solution is to add a small **watermark** to the document, as shown in t
 
 There are many ways to add a watermark to a document, but they often have drawbacks:
 - Some are **paid services**.
-- Some are **complicated** to use and **time-consuming** to learn.
-- When using online services, we cannot be sure if they **store** our identity documents.
+- Some are **time-consuming** to learn.
+- Our ID card images may be stored in **multiple locations** on your phone.
+- When using **online services**, we cannot be sure if they **store** your identity documents.
 
-The goal of this app is to provide a **simple**, **free** solution for adding watermarks to your identity documents quickly and easily, without worrying about **privacy** or **security** issues.
+The goal of this app is to provide a **simple**, **free** solution for adding watermarks to your identity documents **quickly** and **easily**, without worrying about **privacy** or **security** issues.
 
 ## How to set it up?
 
 ## How to use it?
 The usage is very simple.
 
-<img src="images/example2.png" width="200"/>
+<img src="images/example2.png" width="300"/>
 
 As seen in the image, the user only needs to write the text, select whether they want the resulting image in Black and White (B&W), and choose whether to hide the eyes and signature (Hide ID).
