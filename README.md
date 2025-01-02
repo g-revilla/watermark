@@ -36,6 +36,26 @@ conda activate watermark
 4. Run the main.py file.
 
 
+### Android (Still in development)
+Ensure **Docker** is installed on your system. You can find installation instructions [here](https://docs.docker.com/get-docker/).
+
+On the root directory, build the Docker image:
+```bash
+docker build -t watermark:latest -f docker/Dockerfile .
+```
+
+Next, create the container:
+```bash
+docker run --rm -it --name watermark watermark:latest
+```
+
+Once inside, run on the shell:
+```bash
+buildozer -v android debug
+```
+
+The build process takes a considerable amount of time (approximately 20 minutes on my computer). During this process, Buildozer will prompt you to accept some licenses and it will download the necessary Android SDK components. In the end, you will find a file named **watermark-0.1-debug.apk** in the bin folder.
+
 ## How to use it?
 The usage is very simple.
 
