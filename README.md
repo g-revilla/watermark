@@ -41,20 +41,21 @@ Ensure **Docker** is installed on your system. You can find installation instruc
 
 On the root directory, build the Docker image:
 ```bash
-docker build -t watermark:latest -f docker/Dockerfile .
+docker build --no-cache -t watermark:latest -f docker/Dockerfile .
 ```
 
 Next, create the container:
 ```bash
-docker run -it --name watermark -v "$(pwd):/tmp/watermark" -w /tmp/watermark/build watermark:latest
+docker run -it --name watermark watermark:latest
 ```
 
 Once inside, run on the shell:
 ```bash
+rm -rf .buildozer
 buildozer -v android debug
 ```
 
-The build process takes a considerable amount of time (approximately 20 minutes on my computer). During this process, Buildozer will prompt you to accept some licenses and it will download the necessary Android SDK components. In the end, you will find a file named **watermark-0.1-debug.apk** in the bin folder.
+The build process takes a considerable amount of time (approximately 25 minutes on my computer). During this process, Buildozer will prompt you to accept some licenses and it will download the necessary Android SDK components. In the end, you will find a file named **watermark-0.1-debug.apk** in the bin folder.
 
 ## How to use it?
 The usage is very simple.
